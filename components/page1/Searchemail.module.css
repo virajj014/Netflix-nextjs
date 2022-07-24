@@ -1,0 +1,22 @@
+.outer {
+    display: flex;
+    /* background-color: aqua; */
+    /* width: fit-content; */
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.outer input {
+    font-size: 15px;
+    width: 600px;
+    background-color: white;
+    padding: 25px;
+    border: none;
+}
+
+.outer button {
+    background-color: #E50914;
+    border: none;
+    font-size: 25px;
+    padding: 10px;
+}

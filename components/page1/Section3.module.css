@@ -1,0 +1,18 @@
+.outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.outer h1 {
+    font-size: 50px;
+    padding: 30px;
+}
+
+.outer h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 60px;
+}

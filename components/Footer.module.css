@@ -1,0 +1,71 @@
+.lang {
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    border: none;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.lang select {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: gray;
+    font-size: 16px;
+}
+
+.lang svg {
+    width: 20px;
+    color: gray;
+    margin-right: 10px;
+}
+
+
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: gray;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.s1 {
+    display: flex;
+    justify-content: left;
+    padding: 20px 0px;
+}
+
+.s1 span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.s2 {
+    display: flex;
+}
+
+.s2 div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+}
+
+.s2 div p {
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+.s2 div p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
