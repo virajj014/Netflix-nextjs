@@ -32,12 +32,17 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-color: inherit;
+    position: relative;
+    left: 0;
+    bottom: -2px;
 }
 
 .inner {
     display: flex;
     flex-direction: column;
 }
+
 
 .s1 {
     display: flex;

@@ -7,7 +7,9 @@ const Navbar = () => {
     return (
         <div className={styles.outer}>
             <div className={styles.left}>
-                <Image src={logo} alt="logo" layout='responsive' />
+                <Link href='/'>
+                    <Image src={logo} alt="logo" layout='responsive' />
+                </Link>
             </div>
             <div className={styles.right}>
                 <button className={styles.lang}>

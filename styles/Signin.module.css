@@ -1,0 +1,105 @@
+.outer {
+    background-image: url('../Netflix-images/1img.jpg');
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.content {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.326);
+}
+
+
+.container {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    /* display: block; */
+    /* margin: auto; */
+    background-color: rgba(0, 0, 0, 0.714);
+    width: 500px;
+    padding: 70px;
+    border-radius: 5px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form h1 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form form input {
+    padding: 20px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(41, 41, 41);
+    font-size: 15px;
+}
+
+.form form button {
+    background-color: #E50914;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0px 10px 0px;
+}
+
+.forms1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forms1 p {
+    font-size: 14px;
+    color: rgb(168, 168, 168);
+}
+
+.forms1 label {
+    color: rgb(168, 168, 168);
+    font-size: 13px;
+}
+
+.forms2 {
+    margin-top: 100px;
+}
+
+.forms2 h1 {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+    margin: 10px 0px;
+}
+
+.forms2 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(185, 185, 185);
+    margin: 10px 0px;
+}
+
+.forms2 p span {
+    color: rgb(35, 138, 255);
+}
+
+.forms2 h1 span {
+    color: white;
+    font-size: 17px;
+    margin-left: 3px;
+}
