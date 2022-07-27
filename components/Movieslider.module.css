@@ -1,0 +1,56 @@
+.product_carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+    /* width: 100%; */
+}
+
+.product_container {
+    padding: 0 0px;
+    display: flex;
+    overflow-x: hidden;
+    /* scrollbar-width: none; */
+    scroll-behavior: smooth;
+}
+
+.pre_btn,
+.next_btn {
+    border: none;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+.next_btn {
+    right: 0;
+}
+
+
+.pre_btn:hover,
+.next_btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.721);
+}
+
+.next_btn svg,
+.pre_btn svg {
+    width: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.product_card {
+    min-width: 250px;
+    max-width: 250px;
+    height: 140px;
+    background-color: black;
+    margin: 0px 5px;
+    z-index: -10;
+    border-radius: 5px;
+    overflow: hidden;
+}

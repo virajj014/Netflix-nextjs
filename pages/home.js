@@ -51,7 +51,14 @@ const home = ({ netflixOriginals,
     return (
         <div className={styles.outer}>
             <HomeNavbar />
-            <Section1 netflixOriginals={netflixOriginals} />
+            <Section1 netflixOriginals={netflixOriginals}
+                trendingNow={trendingNow}
+                topRated={topRated}
+                actionMovies={actionMovies}
+                comedyMovies={comedyMovies}
+                horrorMovies={horrorMovies}
+                romanceMovies={romanceMovies}
+                documentaries={documentaries} />
         </div>
     )
 }

@@ -7,6 +7,8 @@
     width: 100%;
     top: 0px;
     z-index: +5;
+    background: linear-gradient(to bottom, #000000 0%, #ffffff00 100%);
+
 }
 
 .outer1 {
@@ -14,7 +16,7 @@
     justify-content: space-between;
     height: 70px;
     padding: 0px 40px;
-    background-color: rgba(255, 255, 255, 0.514);
+    background: linear-gradient(to bottom, #000000 50%, #ffffff00 100%);
     position: fixed;
     top: 0px;
     width: 100%;
