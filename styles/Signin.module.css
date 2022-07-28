@@ -44,7 +44,9 @@
 
 .form form input {
     padding: 20px;
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
+    margin-bottom: 10px;
+    margin-top: 5px;
     border-radius: 5px;
     border: none;
     background-color: rgb(41, 41, 41);
@@ -96,10 +98,17 @@
 
 .forms2 p span {
     color: rgb(35, 138, 255);
+    cursor: pointer;
 }
 
 .forms2 h1 span {
     color: white;
     font-size: 17px;
     margin-left: 3px;
+    cursor: pointer;
+}
+
+.error {
+    color: orange;
+
 }
