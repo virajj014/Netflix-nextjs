@@ -62,7 +62,7 @@ const signin = () => {
                             </div>
                         </form>
                         <div className={styles.forms2}>
-                            <h1>New to Netflix?   <Link href="/signup">
+                            <h1>New to Netflix?   <Link href="/signup/registration">
                                 <span>Sign up now</span>
                             </Link></h1>
                             <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.

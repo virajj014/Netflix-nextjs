@@ -1,0 +1,22 @@
+.outer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.left {
+    width: 180px;
+
+}
+
+.right button {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}

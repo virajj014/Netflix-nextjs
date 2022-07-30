@@ -1,22 +1,36 @@
-.outer {
+.outermost {
+    display: flex;
+    justify-content: center;
+}
+
+
+.err {
+    color: rgb(255, 30, 30);
+}
+
+.inner {
     display: flex;
     /* background-color: aqua; */
     /* width: fit-content; */
     justify-content: center;
-    margin: 20px 0px;
+    margin: 20px 0px 5px 0px;
 }
 
-.outer input {
+.inner input {
     font-size: 15px;
     width: 600px;
     background-color: white;
     padding: 25px;
     border: none;
+    color: black;
+
 }
 
-.outer button {
+
+.inner button {
     background-color: #E50914;
     border: none;
     font-size: 25px;
     padding: 10px;
+    cursor: pointer;
 }
