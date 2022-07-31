@@ -12,8 +12,8 @@
 .left {
     width: 200px;
     height: 100px;
-    /* background-color: aquamarine; */
     cursor: pointer;
+    /* background-color: aquamarine; */
 }
 
 .right {
@@ -35,6 +35,14 @@
     border: none;
     outline: none;
     background-color: inherit;
+    cursor: pointer;
+
+}
+
+.lang select option {
+    background-color: black;
+    cursor: pointer;
+
 }
 
 .lang svg {
@@ -49,8 +57,5 @@
     border: none;
     padding: 5px 15px;
     border-radius: 5px;
-}
-
-.signin:hover {
     cursor: pointer;
 }

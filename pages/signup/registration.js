@@ -5,6 +5,7 @@ import Image from 'next/image'
 import devices from '../../Netflix-images/lap_pc_mobile.png'
 import Link from 'next/dist/client/link'
 
+
 const registration = () => {
     return (
         <div className={styles.outer}>
@@ -24,7 +25,6 @@ const registration = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 

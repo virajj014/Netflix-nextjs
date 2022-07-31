@@ -1,10 +1,14 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
-import styles from './Searchemail.module.css'
-import { tempemailvar } from '../../atoms/tempuserdata'
 import { useRecoilState } from 'recoil'
+import { tempemailvar } from '../../atoms/temuserdata'
+import styles from './Searchemail.module.css'
+// import { tempemailvar } from '../../atoms/tempuserdata'
+// import { useRecoilState } from 'recoil'
+
+
 const Searchemail = () => {
-    const [tempuseremail, settempuseremail] = useRecoilState(tempemailvar);
+    const [tempuseremail, settempuseremail] = useRecoilState(tempemailvar)
     const [emailerr, setemailerr] = useState('')
 
     const checkemail = (e) => {
@@ -13,12 +17,10 @@ const Searchemail = () => {
             setemailerr('Email is required')
         }
     }
+
     // console.log(tempuseremail)
 
-
-
     return (
-
         <div className={styles.outermost}>
             <div className={styles.outer}>
                 <div className={styles.inner}>
@@ -29,7 +31,6 @@ const Searchemail = () => {
                 {emailerr && <div className={styles.err}>{emailerr}</div>}
             </div>
         </div>
-
     )
 }
 

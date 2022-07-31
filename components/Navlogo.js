@@ -1,8 +1,9 @@
 import React from 'react'
-import styles from './Navbar.module.css'
 import Image from 'next/image'
 import logo from '../Netflix-images/logo.png'
-import Link from 'next/dist/client/link'
+import styles from './Navbar.module.css'
+import Link from 'next/link'
+
 const Navlogo = () => {
     return (
         <div className={styles.outer}>

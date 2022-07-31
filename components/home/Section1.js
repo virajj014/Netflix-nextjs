@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/dist/client/image'
 import styles from './Section1.module.css'
 import Movieslider from '../Movieslider'
-import Footer from '../Footer'
+
 const Section1 = ({ netflixOriginals,
     trendingNow,
     topRated,
@@ -10,16 +10,14 @@ const Section1 = ({ netflixOriginals,
     comedyMovies,
     horrorMovies,
     romanceMovies,
-    documentaries, }) => {
-    const [movie, setmovie] = useState(null)
+    documentaries }) => {
+    // console.log(netflixOriginals)
+    const [movie, setMovie] = useState(null)
     const baseUrl = 'https://image.tmdb.org/t/p/original/'
     // console.log(netflixOriginals[Math.floor(Math.random() * netflixOriginals.length)])
     useEffect(() => {
-        setmovie(netflixOriginals[Math.floor(Math.random() * netflixOriginals.length)]);
+        setMovie(netflixOriginals[Math.floor(Math.random() * netflixOriginals.length)]);
     })
-
-    // console.log(movie)
-
     // console.log(movie)
     return (
         <div className={styles.outer}>
@@ -42,33 +40,37 @@ const Section1 = ({ netflixOriginals,
                         </button>
 
                         <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             <span>More Info</span>
                         </button>
                     </div>
                 </div>
+
                 <div className={styles.sliders}>
+                    <h1>Trending Now</h1>
+                    <Movieslider movies={trendingNow} contid={'cont1'} />
+
                     <h1>Top Rated</h1>
-                    <Movieslider movies={topRated} contid={'cont1'} />
+                    <Movieslider movies={topRated} contid={'cont2'} />
+
 
                     <h1>Comedy Movies</h1>
-                    <Movieslider movies={comedyMovies} contid={'cont2'} />
-
+                    <Movieslider movies={comedyMovies} contid={'cont3'} />
 
                     <h1>Action Movies</h1>
-                    <Movieslider movies={actionMovies} contid={'cont3'} />
+                    <Movieslider movies={actionMovies} contid={'cont4'} />
 
                     <h1>Horror Movies</h1>
-                    <Movieslider movies={horrorMovies} contid={'cont4'} />
+                    <Movieslider movies={horrorMovies} contid={'cont5'} />
 
                     <h1>Romance Movies</h1>
-                    <Movieslider movies={romanceMovies} contid={'cont5'} />
+                    <Movieslider movies={romanceMovies} contid={'cont6'} />
+
                     <h1>Documentaries</h1>
-                    <Movieslider movies={documentaries} contid={'cont6'} />
+                    <Movieslider movies={documentaries} contid={'cont7'} />
                 </div>
-                <Footer />
             </div>
         </div>
     )

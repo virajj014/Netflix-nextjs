@@ -6,9 +6,8 @@
     position: fixed;
     width: 100%;
     top: 0px;
-    z-index: +5;
+    z-index: +10;
     background: linear-gradient(to bottom, #000000 0%, #ffffff00 100%);
-
 }
 
 .outer1 {
@@ -16,16 +15,19 @@
     justify-content: space-between;
     height: 70px;
     padding: 0px 40px;
-    background: linear-gradient(to bottom, #000000 50%, #ffffff00 100%);
+    background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0px;
     width: 100%;
+    z-index: +10;
+
 }
 
 .left {
     display: flex;
     align-items: center;
 }
+
 
 .left .s1 {
     width: 110px;
@@ -34,6 +36,7 @@
 .left .s2 {
     display: flex;
 }
+
 
 .left .s2 p {
     font-size: 15px;
@@ -60,17 +63,6 @@
 
 }
 
-.searchbar1 {
-    border: none;
-}
-
-/*  */
-.searchbar1 svg {
-    width: 25px;
-    margin: 0px;
-    cursor: pointer;
-}
-
 .right .searchbar svg {
     width: 25px;
     margin: 0px;
@@ -86,15 +78,27 @@
     color: gainsboro;
 }
 
+
 .searchbar_emptydiv {
     width: 20px;
     height: 10px;
     cursor: pointer;
 }
 
+.searchbar1 {
+    border: none;
+}
+
+.searchbar1 svg {
+    width: 25px;
+    margin: 0px;
+    cursor: pointer;
+}
+
 .data_type {
     width: 30px;
     margin: 0px 10px;
+    cursor: pointer;
 }
 
 .right button {
@@ -104,11 +108,9 @@
     border: none;
     padding: 5px 15px;
     border-radius: 5px;
-}
-
-.right button:hover {
     cursor: pointer;
 }
+
 
 .bottomeight {
     position: fixed;

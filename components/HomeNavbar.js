@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../Netflix-images/logo.png'
 import Image from 'next/dist/client/image'
-import styles from './HomeNavbar.module.css'
+import styles from './Homenavbar.module.css'
 import children from '../Netflix-images/children.png'
+import { useRouter } from 'next/router'
+import { useAuth } from '../Auth/AuthContext'
 
-const HomeNavbar = () => {
+const homeNavbar = () => {
     const [searchbarshow, setSearchbarshow] = useState(false);
     const [isscrolled, setisscrolled] = useState(false);
     useEffect(() => {
@@ -17,26 +19,35 @@ const HomeNavbar = () => {
             }
         }
 
-        window.addEventListener('scroll', handleScroll)
-
+        window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll)
         }
-    }, [])
+    })
+
+    const router = useRouter();
+    const { user, signIn, signUp, logout } = useAuth();
+
+    const handleexit = () => {
+        logout();
+        router.push('/')
+    }
     return (
         <div className={isscrolled == true ? styles.outer1 : styles.outer}>
             <div className={styles.left}>
-                <div className={styles.s1}><Image src={logo} layout='responsive' /></div>
+                <div className={styles.s1}>
+                    <Image src={logo} alt="logo" />
+                </div>
                 <div className={styles.s2}>
                     <p className={styles.active}>Home</p>
                     <p>Characters</p>
-
                     <p>TV Shows</p>
                     <p>Movies</p>
                     <p>New & Popular</p>
                     <p>My List</p>
                 </div>
             </div>
+
             <div className={styles.right}>
                 <div className={searchbarshow == true ? styles.searchbar : styles.searchbar1}>
                     <svg onClick={() => setSearchbarshow(!searchbarshow)} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -50,14 +61,15 @@ const HomeNavbar = () => {
                         : <></>
                     }
                 </div>
+
                 <div className={styles.data_type} >
                     <Image src={children} />
                 </div>
-                <button>Exit Children</button>
+                <button onClick={handleexit}>Exit Children</button>
                 <p className={styles.bottomeight}>children</p>
             </div>
         </div>
     )
 }
 
-export default HomeNavbar
+export default homeNavbar

@@ -1,9 +1,7 @@
-import Image from 'next/image'
 import React from 'react'
-
 import styles from './Section2left.module.css'
+
 const Section2left = ({ logo, head1, head2 }) => {
-    // console.log(logo)
     return (
         <div className={styles.outer}>
             <div className={styles.left}>
@@ -12,9 +10,11 @@ const Section2left = ({ logo, head1, head2 }) => {
                     <h2>{head2}</h2>
                 </div>
             </div>
+
             <div className={styles.right}>
                 <img src={logo.src} />
             </div>
+
         </div>
     )
 }

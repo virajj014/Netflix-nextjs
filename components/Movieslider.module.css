@@ -1,12 +1,12 @@
 .product_carousel {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0px;
     /* width: 100%; */
 }
 
 .product_container {
-    padding: 0 0px;
+    padding: 0px;
     display: flex;
     overflow-x: hidden;
     /* scrollbar-width: none; */
@@ -24,6 +24,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.274);
+    z-index: +7;
 }
 
 .next_btn {

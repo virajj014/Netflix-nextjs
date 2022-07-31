@@ -41,7 +41,6 @@
     /* background-color: aqua */
 }
 
-
 .s11 {
     display: flex;
     align-items: center;
@@ -67,19 +66,12 @@
     /* background-color: aqua; */
 }
 
+
 .s21 {
     width: 100%;
     display: flex;
     /* background-color: yellow; */
     justify-content: right;
-}
-
-.s22 {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0px;
 }
 
 .redbox {
@@ -93,14 +85,17 @@
     justify-content: center;
     align-items: center;
     margin: 0px 20px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-
-.s21 {
+.s22 {
     display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
 }
-
-
 
 .cleft {
     width: 30%;
@@ -109,6 +104,8 @@
 .cnormal {
     width: 130px;
     margin: 0px 20px;
+    color: rgb(99, 99, 99);
+    font-weight: 600;
     /* background-color: yellow; */
 }
 
@@ -122,6 +119,7 @@
     justify-content: space-between;
     margin: 20px 0px;
 }
+
 
 .s23 .right1 {
     display: flex;
@@ -138,23 +136,34 @@
     margin: 0px 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    ;
+    /* background-color: aqua; */
 }
 
 .device svg {
-    width: 30px;
-    color: gray;
+    width: 30px
 }
 
-.cnormal {
+.device .svggrey {
     color: gray;
-    font-weight: 600;
+    text-align: center;
 }
 
+.device .svgred {
+    text-align: center;
 
-.device p {
+    color: #db0000;
+}
+
+.device .ptaggrey {
     color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.device .ptaggrey {
+    color: #db0000;
     font-weight: 400;
     font-size: 14px;
 }
@@ -165,8 +174,38 @@
     background-color: rgb(189, 189, 189);
 }
 
+/* active */
+.boxactive {
+    background-color: #db0000;
+}
 
-.active {
-    color: red;
-    font-weight: 700;
+.redtext {
+    color: #db0000;
+}
+
+
+.s24 p {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0px;
+    width: 80%;
+    margin: 10px 0px;
+}
+
+.s24 span {
+    color: blue;
+}
+
+.inner button {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    background-color: #db0000;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
 }

@@ -1,7 +1,9 @@
+import { useRouter } from 'next/router'
 import React from 'react'
+import { useAuth } from '../Auth/AuthContext'
+import Section1 from '../components/home/Section1'
 import HomeNavbar from '../components/HomeNavbar'
 import styles from '../styles/Homepage.module.css'
-import Section1 from '../components/home/Section1'
 import requests from '../utils/requests'
 
 export const getServerSideProps = async () => {
@@ -39,26 +41,30 @@ export const getServerSideProps = async () => {
         },
     }
 }
-const home = ({ netflixOriginals,
+
+
+
+
+const home = ({
+    netflixOriginals,
     trendingNow,
     topRated,
     actionMovies,
     comedyMovies,
     horrorMovies,
     romanceMovies,
-    documentaries, }) => {
+    documentaries
+}) => {
+
     // console.log(netflixOriginals)
+
+
+
+
     return (
         <div className={styles.outer}>
             <HomeNavbar />
-            <Section1 netflixOriginals={netflixOriginals}
-                trendingNow={trendingNow}
-                topRated={topRated}
-                actionMovies={actionMovies}
-                comedyMovies={comedyMovies}
-                horrorMovies={horrorMovies}
-                romanceMovies={romanceMovies}
-                documentaries={documentaries} />
+            <Section1 netflixOriginals={netflixOriginals} trendingNow={trendingNow} topRated={topRated} actionMovies={actionMovies} comedyMovies={comedyMovies} horrorMovies={horrorMovies} romanceMovies={romanceMovies} documentaries={documentaries} />
         </div>
     )
 }

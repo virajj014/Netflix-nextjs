@@ -1,7 +1,8 @@
 import React from 'react'
 import Searchemail from './Searchemail'
-import styles from './Section1.module.css'
 import Navbar from '../Navbar'
+import styles from './Section1.module.css'
+
 const Section1 = () => {
     return (
         <div className={styles.outer}>

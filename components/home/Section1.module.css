@@ -28,13 +28,21 @@
     margin-left: 50px;
 }
 
+
+.s2 {
+    position: relative;
+    z-index: +8;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .titledescription h1 {
     font-size: 60px;
     width: 60%;
     line-height: 70px;
     padding: 20px 0px;
     text-shadow: 0px 0px 10px black;
-
 }
 
 .titledescription p {
@@ -50,7 +58,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 
 .btncont {
     display: flex;
@@ -75,8 +82,9 @@
 
 .btncont button:nth-child(1) svg {
     width: 40px;
-}
+    margin-right: 5px;
 
+}
 
 .btncont button:nth-child(1):hover {
     background-color: rgb(218, 218, 218);
@@ -94,6 +102,7 @@
 
 }
 
+
 .btncont button:nth-child(2) {
     background-color: rgba(136, 136, 136, 0.74);
     color: white;
@@ -108,11 +117,11 @@
     margin: 0px 5px;
 }
 
+
 .btncont button:nth-child(2) svg {
     width: 30px;
     margin-right: 5px;
 }
-
 
 .btncont button:nth-child(2):hover {
     cursor: pointer;
@@ -129,22 +138,13 @@
     margin: 0px 5px;
 }
 
-.s2 {
-    position: relative;
-    z-index: +10;
-    top: 20vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.sliders {
-    margin-top: 10px;
-}
-
 .sliders h1 {
-
     font-size: 30px;
     font-weight: 400;
     margin: 50px 0px 10px 20px;
     text-shadow: 0px 0px 10px black;
+}
+
+.sliders {
+    /* margin-top: 10px; */
 }

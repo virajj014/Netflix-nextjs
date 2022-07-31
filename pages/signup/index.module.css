@@ -16,7 +16,7 @@
 
 .inner {
     width: 300px;
-    margin-top: 200px;
+    margin-top: 100px;
     /* background-color: aqua; */
     display: flex;
     flex-direction: column;
@@ -28,10 +28,10 @@
     width: 50px;
 }
 
+
 .inner .s1 {
     display: flex;
     justify-content: center;
-
 }
 
 .s2 h1 {
@@ -72,9 +72,4 @@
     width: 100%;
     margin: 10px 0px;
     cursor: pointer;
-}
-
-.inner button:hover {
-    cursor: pointer;
-    background-color: #de2a33;
 }

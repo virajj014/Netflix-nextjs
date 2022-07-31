@@ -8,6 +8,7 @@
     margin: 20px 0px;
 }
 
+
 .lang select {
     border: none;
     outline: none;
@@ -21,7 +22,6 @@
     color: gray;
     margin-right: 10px;
 }
-
 
 
 .outer {
@@ -42,7 +42,6 @@
     display: flex;
     flex-direction: column;
 }
-
 
 .s1 {
     display: flex;
